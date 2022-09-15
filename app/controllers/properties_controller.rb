@@ -51,7 +51,7 @@ class PropertiesController < ApplicationController
   end
 
   def index
-    @properties = Property.all.order(created_at: :desc)
+    @properties = Property.order(created_at: :desc)
   end
 
   private
