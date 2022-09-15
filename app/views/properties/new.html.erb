@@ -1,0 +1,9 @@
+<%= simple_form_for(@property) do |f| %>
+<div class="form">
+    <%= f.input :city,
+                label: "ville ?" %>
+    <%= f.input :price,
+                label: "prix ?" %>
+    <%= f.button :submit,"Créer un bien" %>
+  </div>
+<% end %>
